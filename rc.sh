@@ -1,14 +1,15 @@
 #!/bin/bash
 #
-# rc (remote command) in bash - to run commands on a cluster/list of remote nodes through ssh.
+# 'rc' (remote command) in bash - to run commands on a cluster/list of remote nodes through ssh.
 #
 
 usage() {
     echo
-    echo "Usage: $(basename $0) [-h] [-f filename] -c command"
+    echo "Usage: $(basename $0) [-h] -f <filename> -c <command>"
     echo 
-    echo "  -h, show help text"
+    echo "  -h, show command usage"
     echo "  -f, set the file which contains the node list"
+    echo "  -c, set the command(s) to be run on the list of nodes"
     echo
     exit 1
 }
